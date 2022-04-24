@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+.containerAll {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: inline-block;
+    position: relative;
+}
+
+
+.gameBars {
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+}
+
+.playerHealthBar {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    height: 30px;
+    width: 100%;
+}
+
+.playerCurrentLife {
+    background: blue;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.playerTotalLife {
+    background-color: yellow;
+    height: 30px;
+    width: 100%;
+}
+
+.enemyHealthBar {
+    position: relative;
+    height: 30px;
+    width: 100%;
+}
+
+.enemyCurrentLife {
+    position: absolute;
+    background: blue;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.enemyTotalLife {
+    background-color: yellow;
+    height: 30px;
+}
+
+.timer {
+    align-items: center;
+    background-color: red;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+}
+
+.displayText {
+    align-items: center;
+    color: white;
+    display: none;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.playerName {
+    display: none;
+}
+
+.enemyName {
+    display: none;
+}
