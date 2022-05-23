@@ -17,9 +17,9 @@ function determineWinner({ player, enemy, timerId }) {
     if (player.health === enemy.health) {
         displayText.innerHTML = 'Empate';
     } else if (player.health > enemy.health) {
-        displayText.innerHTML = `${playerName} Ganhou`;
+        displayText.innerHTML = `${playerName} Wins`;
     } else {
-        displayText.innerHTML = `${enemyName} Ganhou`;
+        displayText.innerHTML = `${enemyName} Wins`;
     }
 }
 
@@ -27,7 +27,7 @@ let timer = 60;
 let timerId
 
 function decreaseTimer() {
-    if(timer > 0 ) {
+    if (timer > 0) {
         timerId = setTimeout(() => {
             timer--;
             document.querySelector('.timer').innerHTML = timer

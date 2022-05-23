@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .containerAll {
@@ -24,16 +25,19 @@
 }
 
 .playerHealthBar {
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    border-radius: 4px;
     display: flex;
     justify-content: flex-end;
     position: relative;
-    height: 30px;
     width: 100%;
 }
 
 .playerCurrentLife {
-    background: blue;
     position: absolute;
+    background: #818CF8;
     top: 0;
     right: 0;
     bottom: 0;
@@ -41,20 +45,23 @@
 }
 
 .playerTotalLife {
-    background-color: yellow;
+    background-color: #AC0404;
     height: 30px;
     width: 100%;
 }
 
 .enemyHealthBar {
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    border-radius: 4px;
     position: relative;
-    height: 30px;
     width: 100%;
 }
 
 .enemyCurrentLife {
+    background: #818CF8;
     position: absolute;
-    background: blue;
     top: 0;
     right: 0;
     bottom: 0;
@@ -62,17 +69,20 @@
 }
 
 .enemyTotalLife {
-    background-color: yellow;
+    background-color: #AC0404;
     height: 30px;
 }
 
 .timer {
+    border: 3px solid white;
+    border-radius: 4px;
     align-items: center;
-    background-color: red;
+    background-color: #211819;
+    color: white;
     display: flex;
     flex-shrink: 0;
     justify-content: center;
-    height: 100px;
+    height: 50px;
     width: 100px;
 }
 

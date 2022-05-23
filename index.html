@@ -5,11 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
     <title>Fighting Game</title>
 </head>
 <body>
     <div class="containerAll">
+
         <div class="container">
+
             <div class="gameBars">
                 <div class="playerHealthBar">
                     <div class="playerCurrentLife"></div>
@@ -18,19 +24,24 @@
                 <div class="timer">
                     60
                 </div>
+
                 <div class="enemyHealthBar">
                     <div class="enemyCurrentLife"></div>
                     <div class="enemyTotalLife"></div>
                 </div>
                 <div></div>
             </div>
+
             <div class="displayText">
                 <span class="playerName">Player 1</span>
                 <span class="enemyName">Player 2</span>
             </div>
+
             <canvas></canvas>
         </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/classes.js"></script>
     <script src="js/utils.js"></script>
     <script src="index.js"></script>
